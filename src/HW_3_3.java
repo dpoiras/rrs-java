@@ -9,7 +9,7 @@ public class HW_3_3 {
 
     public static void main(String[] args) {
 
-        int a = 67;
+        int a = 67 ;
 
         if (a > 10) {
             System.out.println("больше 10");
