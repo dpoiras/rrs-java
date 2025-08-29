@@ -1,4 +1,6 @@
-public class HW_1_3 {
+package lesson;
+
+public class Lesson_1 {
 
     public static void main(String[] args) {
 

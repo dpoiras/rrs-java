@@ -1,3 +1,5 @@
+package homework.hw3;
+
 public class HW_3_4 {
 
     /* Необходимо вывести числа от 0 до 15. */
