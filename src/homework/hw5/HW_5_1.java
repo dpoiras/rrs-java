@@ -18,7 +18,7 @@ public class HW_5_1 {
 
         }
 
-        System.out.println("\ncумма всех значений массива - " + sum);
+        System.out.println("\ncумма всех значений массива = " + sum);
 
     }
 

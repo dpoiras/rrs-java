@@ -10,7 +10,7 @@ public class HW_5_2 {
 
         int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 
-        int max = array[0];
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
 
             if (array[i] > max) {
@@ -18,7 +18,7 @@ public class HW_5_2 {
             }
         }
 
-        System.out.println("\nмаксимальное значение - " + max);
+        System.out.println("\nмаксимальное значение = " + max);
 
     }
 }

@@ -13,10 +13,11 @@ public class HW_4_3 {
         int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = array[i] + 15;
+//            array[i] = array[i] + 15;
+            array[i] += 15;
         }
 
-        System.out.println("Новый массив: " + Arrays.toString(array));
+        System.out.println("\nНовый массив: " + Arrays.toString(array));
 
     }
 }
