@@ -9,10 +9,20 @@ public class HW_6_3 {
      */
 
     public static void main(String[] args) {
+        int[][] array = {
+                {1, 23, -5, 456, 78},
+                {9, -12, 34, 56, -7},
+                {89, 0, -99, 100, 23},
+                {45, 67, -8, 90, -1},
+                {12, -34, 56, 78, 9}
+        };
 
-
-
-
+        for (int[] row : array) {
+            for (int num : row) {
+                System.out.printf("%4d", num);
+            }
+            System.out.println();
+        }
 
     }
 }

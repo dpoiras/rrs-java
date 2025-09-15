@@ -19,10 +19,52 @@ public class HW_6_6 {
 
     public static void main(String[] args) {
 
+        String str = "I’m just 16,\n" +
+                "going on\t17!";
+        int upperCaseCount = 0;
+        int lowerCaseCount = 0;
+        int vowelCount = 0;
+        int consonantCount = 0;
+        int digitCount = 0;
+        int punctuationCount = 0;
+        int whitespaceCount = 0;
 
+        String vowels = "AEIOUaeiou";
+        String punctuation = "~@#$%^&*()_-+=,.'\"!?;:[]{}<>";
 
+        for (char ch : str.toCharArray()) {
+            if (Character.isUpperCase(ch)) {
+                upperCaseCount++;
+            } else if (Character.isLowerCase(ch)) {
+                lowerCaseCount++;
+            }
 
+            if (vowels.indexOf(ch) != -1) {
+                vowelCount++;
+            } else if (Character.isLetter(ch)) {
+                consonantCount++;
+            }
 
+            if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+
+            if (punctuation.indexOf(ch) != -1) {
+                punctuationCount++;
+            }
+
+            if (Character.isWhitespace(ch)) {
+                whitespaceCount++;
+            }
+        }
+
+        System.out.println("Uppercase letters: " + upperCaseCount);
+        System.out.println("Lowercase letters: " + lowerCaseCount);
+        System.out.println("Vowels: " + vowelCount);
+        System.out.println("Consonants: " + consonantCount);
+        System.out.println("Digits: " + digitCount);
+        System.out.println("Punctuation marks: " + punctuationCount);
+        System.out.println("Whitespace characters: " + whitespaceCount);
 
     }
 }

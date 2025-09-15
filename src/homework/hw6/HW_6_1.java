@@ -10,10 +10,26 @@ public class HW_6_1 {
 
     public static void main(String[] args) {
 
-        int[] temperature = {32, 23, 24, 52, 32};
+        int[] temp = {34, 23, 47, 32, 33, 27, 35, 47};
 
+        int tempMax1 = Integer.MIN_VALUE;
+        int tempMax2 = Integer.MIN_VALUE;
 
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i] > tempMax1) {
+                tempMax1 = temp[i];
+            }
+        }
 
+        System.out.println("Maximum temperature: " + tempMax1);
+
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i] > tempMax2 && temp[i] < tempMax1) {
+                tempMax2 = temp[i];
+            }
+        }
+
+        System.out.println("Next maximum temperature: " + tempMax2);
 
     }
 }

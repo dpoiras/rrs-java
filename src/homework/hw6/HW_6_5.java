@@ -16,9 +16,28 @@ public class HW_6_5 {
 
     public static void main(String[] args) {
 
+        int[][] array = {
+                {3, 5, 7},
+                {1, 4, 6},
+                {9, 2, 8}
+        };
 
+        int n = array.length;
 
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int temp = array[i][j];
+                array[i][j] = array[j][i];
+                array[j][i] = temp;
+            }
+        }
 
+        for (int[] row : array) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
 
     }
 }
